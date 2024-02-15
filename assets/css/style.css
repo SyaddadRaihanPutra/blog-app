@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #122D5A;
+    --secondary-color: #B2B0BF;
+    --third-color: #2F4570;
+    --font-size-1: 52px;
+    --font-size-2: 42px;
+    --font-size-3: 22px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-white {
+    background-color: white;
+    border-color: white;
+    color: var(--primary-color);
+}
+
+.btn-white:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar .navbar-brand {
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+header {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.detail, .detail-post {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .header-title {
+    font-size: var(--font-size-1);
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    header, .detail-post {
+        width: 100%
+    }
+}
+
+section .section-title {
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+
+.hero-post .hero-post-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-post .hero-post-title {
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.posts .card {
+    transition: .3s all;
+}
+
+.posts .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.posts .category {
+    width: max-content;
+}
+
+.posts .post-title {
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+
+.posts .position {
+    font-size: 14px
+}
+
+.posts .card:hover {
+    box-shadow: 0px 29px 81px -32px rgba(222, 222, 222, 0.76);
+}
+
+.subscribe .input-group {
+    background-color: var(--third-color);
+}
+
+.subscribe {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.subscribe .btn-white {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
